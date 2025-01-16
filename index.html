@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patisserie Al Hamrouni</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <p><span>AL </span>Hamrouni</p>
+        </div>
+        <ul class="menu">
+            <li><a href="#home">Accueil</a></li>
+            <li><a href="#menu">Gateau</a></li>
+            <li><a href="#about_us">A propos</a></li>
+            <li><a href="#reservation">Passez commande</a></li>
+            <li><a href="panier.html">Panier</a></li>
+        </ul>
+        <div class="toggle_menu"></div>
+    </header>
+    <section id="home">
+        <div class="left">
+            <h4>Nos Nouveautés</h4>
+            <h1>Les Gateau</h1>
+            <p> De magnifiques gâteaux sont bien plus que de simples couches lisses de glaçage au beurre ou des roses délicatement façonnées. Il s'agit aussi de maîtriser des astuces qui rendent l'ensemble non seulement plus esthétique, mais également plus savoureux.</p>
+            <button><a href="#menu">Commander maintenant</a></button>
+        </div>
+        <div class="right">
+            <img src="logo.png" >
+        </div>
+    </section>
+    <section id="carousel" class="py-5">
+        <h4 class="title-menu text-center">Galerie</h4>
+        <h2 class="title text-center">Nos Gâteaux</h2>
+        <div id="imageCarousel" class="carousel slide" data-bs-ride="carousel">
+            <!-- Indicateurs -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+    
+            <!-- Images du carrousel -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="5.jpg" class="d-block w-100" alt="Tiramisu inratable">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Gateau au chocolat</h5>
+                        <p>Un classique italien recettes.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="8.jpg" class="d-block w-100" alt="Tiramisu aux fruits">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Gâteau Carré Vanille</h5>
+                        <p>Une douceur parfaite pour l'été.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="9.jpg" class="d-block w-100" alt="Tiramisu au chocolat">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Gateau Vanille et Chocolat</h5>
+                        <p>Le chocolat à l'état pur et vanilleavec gout frais.</p>
+                    </div>
+                </div>
+            </div>
+    
+            <button class="carousel-control-prev" type="button" data-bs-target="#imageCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Précédent</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#imageCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Suivant</span>
+            </button>
+        </div>
+    </section>
+
+    <section id="menu">
+        <h4 class="title-menu">Nos Gateau</h4>
+        <h2 class="title">Gateau Rond</h2>
+        <div class="tiramisus">
+            <div class="tiramisu">
+                <img src="9.jpg" >
+                <p>Gâteau Rond Vanille et Chocolat 20cm</p>
+                <h2>30dt</h2>
+                <button class="add-to-cart" data-name="Gâteau Rond Vanille et Chocolat 20cm" data-price="30.00">Ajouter au panier</button>
+            </div>
+            <div class="tiramisu">
+                <img src="fraise.jpg" >
+                <p>Gâteau Carré à la fraise 20cmx20cm</p>
+                <h2>30dt</h2>
+                <button class="add-to-cart" data-name="Gâteau Carré à la fraise 20cmx20cm" data-price="30.00">Ajouter au panier</button>
+             </div>
+             <div class="tiramisu">
+                <img src="opera 3.jpg" >
+                <p>Gâteau au Chocolat Opéra 40cmx30cm</p>
+                <h2>70dt</h2>
+                <button class="add-to-cart" data-name="Gâteau au Chocolat Opéra 40cmx30cm" data-price="70.00">Ajouter au panier</button>
+             </div>
+             <div class="tiramisu">
+                <img src="11.jpg" >
+                <p>Gâteau Rond Pistache 30cm</p>
+                <h2>40dt</h2>
+                <button class="add-to-cart" data-name="Gâteau Rond Pistache 30cm" data-price="40.00">Ajouter au panier</button>
+             </div>
+             <div class="tiramisu">
+                <img src="8.jpg" >
+                <p>Gâteau Carré à la Noisette 40cmx40cm</p>
+                <h2>100dt</h2>
+                <button class="add-to-cart" data-name="Gâteau Carré à la Noisette 40cmx40cm" data-price="100.00">Ajouter au panier</button>
+             </div>
+             <div class="tiramisu">
+                <img src="gateau-1-.jpg" >
+                <p>Gâteau Rond Au Chocolat 40cm</p>
+                <h2>50dt</h2>
+                <button class="add-to-cart" data-name="Gâteau Rond Au Chocolat 40cm" data-price="50.00">Ajouter au panier</button>
+             </div>
+        </div>
+    </section>
+
+
+    <section id="about_us">
+        <h4 class="title-menu">À propos</h4>
+        <h2 class="title">Pourquoi nous choisir ?</h2>
+        <div class="about">
+            <div class="left">
+                <img src="maxresdefault4.jpg" >
+            </div>
+            <div class="right">
+                <h3>Meilleur Gâteau Dans Le Monde</h3>
+                <p>Préparés avec amour, décorés avec fantaisie : nos tutoriels et recettes vous montrent comment cuisiner vous-même un magnifique gâteau recouvert de fondant. À l'aide de nos conseils, la garniture et la décoration de vos gâteaux de rêve et de vos cupcakes créatifs seront parfaitement réussies</p>
+                <p>Avez-vous déjà essayé de mettre de l'amour dans un gâteau ? Sans doute cet ingrédient magique se retrouve-t-il bien souvent en cuisine, tant la notion de partage et la volonté de faire plaisir à ceux que l’on aime est essentielle dans ce domaine. Mais dans les contes de fées, l’amour peut littéralement devenir un ingrédient !</p>
+                <button><a href="about.html">Learn More</a></button>
+            </div>
+        </div>
+    </section>
+
+    <section id="comments_section">
+        <h4 class="title-menu">Commentaires</h4>
+        <h2 class="title">Que pensent les gens de nous ?</h2>
+        <div class="comments">
+            <div class="comment">
+                <div>
+                    <img src="Capture d'écran 2025-01-11 214704.png" >
+                    <h4>Omar Said</h4>
+                </div>
+              <p>Un gâteau au chocolat est un dessert-pâtisserie à base de chocolat, généralement sucré, et parfois agrémenté d'autres saveurs comme la vanille ou les fruits secs.</p>
+            </div>
+        
+            <div class="comment">
+                <div>
+                    <img src="licensed-image.jpg" >
+                    <h4>Emmanuel Macron</h4>
+                </div>
+              <p>Un gâteau d'anniversaire est tautologiquement un gâteau servi à l'occasion d'un anniversaire.</p>
+            </div>
+        
+            <div class="comment">
+                <div>
+                    <img src="images (1).jpg" >
+                    <h4>Hedi Habbouba</h4>
+                </div>
+              <p>Un gâteau de fiançailles est tautologiquement un gâteau servi à l'occasion de fiançailles.</p>
+           </div>
+        </div>
+    </section>
+
+    <section id="reservation">
+        <h4 class="title-menu">commander</h4>
+        <h2 class="title">Remplissez ce formulaire pour passez une commande.</h2>
+        <form action="">
+            <label>Your name</label>
+            <input type="text" id="nom">
+            <label>Your Email</label>
+            <input type="email" id="email">
+            <label>Your Number</label>
+            <input type="text" id="numTel" >
+            <label>La date de commande</label>
+            <input type="date">
+            <label>Gâteau a commander</label>
+            <input type="text" id="nom">
+            <input type="submit" id="commande" value="Passez une commande" onclick="verifier()">
+        </form>
+    </section>
+    <section id="product_table">
+        <h2 class="title">Product List</h2>
+        <table>
+            <thead >
+                <tr>
+                    <th>Product ID</th>
+                    <th>Product Name</th>
+                    <th>Category</th>
+                    <th>Price</th>
+                    <th>Stock</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>3012</td>
+                    <td>Gâteau Rond Vanille et Chocolat 20cm</td>
+                    <td>Gâteau</td>
+                    <td>30dt</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>3020</td>
+                    <td>Gâteau Carré à la fraise 20cmx20cm</td>
+                    <td>Gâteau</td>
+                    <td>30dt</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>3024</td>
+                    <td>Gâteau au Chocolat Opéra 40cmx30cm</td>
+                    <td>Gâteau</td>
+                    <td>70dt</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>4021</td>
+                    <td>Gâteau Rond Pistache 30cm</td>
+                    <td>Gâteau</td>
+                    <td>40dt</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>5032</td>
+                    <td>Gâteau Carré à la Noisette 40cmx40cm</td>
+                    <td>Gâteau</td>
+                    <td>100dt</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>5022</td>
+                    <td>Gâteau Rond Au Chocolat 40cm</td>
+                    <td>Gâteau</td>
+                    <td>50dt</td>
+                    <td>1</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    
+    <footer>
+        <h4 class="title-menu">Bienvenue à notre chatbot !</h4>
+        <h2 class="title">Vous pouvez nous poser des questions</h2>
+        <div class="services">
+            <div class="service">
+                <form id="chatbotForm">
+                    <label>Question</label>
+                    <input type="text" id="question" placeholder="Posez une question ici" required>
+                    <input type="submit" id="commande" value="Poser">
+                </form>
+            </div>
+            <div class="service">
+                <p id="reponse">La réponse sera affichée ici</p>
+            </div>
+        </div>
+        <hr>
+        <p class="footer-text">Réalisé par : <span>Kais Hamrouni</span> Tous les droits sont réservés.</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

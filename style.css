@@ -1,0 +1,742 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;1,500&family=Raleway:ital,wght@0,100;0,400;0,500;1,200&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif
+}
+section {
+    margin-top: 50px;
+}
+body {
+    position: relative;
+}
+html {
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    padding: 0 10%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(255 255 255 /0.9);
+    box-shadow: 0 0 10px rgba(0, 0,0, 0.2);
+    z-index: 10;
+}
+.menu {
+    display: flex;
+}
+.logo {
+    color: #27ae60;
+    font-weight: 700;
+    font-size: 25px;
+}
+.logo span {
+    color: #273e60;
+}
+.menu li {
+    margin: 0 15px;
+    list-style: none;
+}
+.menu li a {
+    font-size: 14px;
+    text-decoration: 0;
+    color: #999;
+    position: relative;
+}
+.menu li a::before {
+    position: absolute;
+    top: -5px;
+    left: 0;
+    content: "";
+    width: 0;
+    height: 2px;
+    border-radius: 6px;
+    background-color: #27ae60;
+    transition: 0.5s;
+}
+.menu li a:hover::before {
+    width: 100%;
+}
+.menu li a::after {
+    position: absolute;
+    bottom: -5px;
+    right: 0;
+    content: "";
+    width: 0;
+    height: 2px;
+    border-radius: 6px;
+    background-color: #27ae60;
+    transition: 0.5s;
+}
+.menu li a:hover::after {
+    width: 100%;
+}
+.menu li a:hover {
+    color: #000;
+}
+/*home CSS */
+#home {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    height: calc(100vh - 50px);
+    justify-content: space-between;
+}
+#home .left {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#home .left h4 {
+    font-size: 20px;
+    color: #27ae60;
+}
+#home .left h1 {
+    font-size: 40px;
+}
+#home .left p {
+    font-size: 12px;
+    color: #999;
+}
+#home .left button {
+    margin-top: 20px;
+    width: fit-content;
+    padding: 5px 10px;
+    background-color: #000;
+    border: 0;
+    transition: 0.5s;
+    position: relative;
+    cursor: pointer;
+}
+#home .left button a {
+    text-decoration: 0;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+#home .left button::before {
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    content: "";
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background-color: #27ae60;
+}
+#home .left button:hover a {
+    letter-spacing: 1px;
+}
+#home .right {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#home .right img {
+    width: 100%;
+    animation: animate 2s linear;
+    transition: 0.5s;
+}
+/*animation image */
+@keyframes animate {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+/*menu CSS */
+#menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgba(0,0,0, 0.05);
+    padding: 50px 10px;
+}
+#commande {
+    margin-top: 10px;
+    font-size: 14px;
+    text-decoration: 0;
+    background-color: #27ae60;
+    padding: 5px 60px;
+    color: #fff;
+    border-radius: 6px;
+}
+.title-menu {
+    margin-top: 25px;
+    font-size: 16px;
+    color: #27ae60;
+    text-transform: capitalize;
+} 
+.title {
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #273e60;
+    margin-bottom: 25px;
+    text-align: center;
+}
+.titles {
+    font-size: 40px;
+    text-transform: uppercase;
+    color: #273e60;
+    margin-bottom: 25px;
+    text-align: center;
+}
+.tiramisus {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    justify-content: space-around;
+}
+.tiramisus .tiramisu {
+    height: 280px;
+    width: 40%;
+    background-color: #fff;
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 6px;
+    margin-bottom: 35px;
+    transition: 0.5s;
+    box-shadow: 0 0 10px rgba(0, 0,0, 0.1);
+}
+.tiramisus .tiramisu img {
+    width: 280px;
+    height: 160px;
+    margin-bottom: 15px;
+}
+.tiramisus .tiramisu p {
+    text-align: center;
+    font-size: 18px;
+}
+.tiramisus .tiramisu button {
+    margin-top: 10px;
+    font-size: 14px;
+    text-decoration: 0;
+    background-color: #27ae60;
+    padding: 5px 60px;
+    color: #fff;
+    border-radius: 6px;
+}
+
+/*Scrollbar CSS */
+::-webkit-scrollbar {
+width: 8px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #27ae60;
+}
+/*about us CSS */
+#about_us {
+    display: flex;
+    align-items: center;
+    height: calc(100vh - 50px);
+    flex-direction: column;
+    padding: 50px 10%;
+    width: 100%;
+}
+.about {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    height: 70vh;
+}
+.about .left {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.about .left img {
+    width: 90%;
+}
+.about .right {
+    width: 60%;
+}
+.about .right h3 {
+    font-size: 35px ;
+    color: #273e60;
+    margin: 10px 0;
+    
+}
+.about .right p {
+    font-size: 14px;
+    color: #999;
+}
+.about .right button {
+    margin: 20px 0;
+    padding: 5px 60px;
+    background-color: #27ae60;
+    border: 0;
+}
+.about .right button a {
+    color: #fff;
+    text-decoration: 0;
+    font-weight: bolder;
+}
+/*Comment section CSS */
+#comments_section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 50px);
+    flex-direction: column;
+    padding: 0 10%;
+}
+.comments {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.comments .comment div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+   
+}
+.comments .comment div img {
+    width: 45px;
+    height: 45px;
+    border: 2px solid #27ae60;
+    border-radius: 50%;
+}
+.comments .comment {
+    width: 30%;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 20px;
+}
+.comments .comment div h4 {
+    margin-left: 15px;
+    font-size: 14px;
+    color: #273e60;
+}
+.comments .comment p {
+    font-size: 13px;
+    color: #999;
+}
+.comments .commentss {
+    font-size: 30px;
+    color: #999;
+}
+/*reservation CSS */
+#reservation {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
+}
+#reservation form {
+    display: flex;
+    background-color: rgba(0,0,0, 0.05);
+    padding: 25px;
+    border-radius: 6px;
+    flex-direction: column;
+    width: 350px;
+}
+#reservation form label {
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+#reservation form input {
+    margin-bottom: 10px;
+    padding: 5px;
+    border: 1px solid transparent;
+    box-shadow: 0 0 10px rgba(0,0,0, 0.05);
+    outline: 0;
+}
+#reservation form input:focus {
+    outline: 1px solid #27ae60;
+}
+#reservation form input[type = "submit"] {
+    margin-top: 15px;
+    color: #fff ;
+    background-color: #27ae60;
+    border: 1px solid #27ae60;
+    
+}
+#product_table{
+    font-size: 20px;
+    color: #999;
+}
+/*footer css */
+footer {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+}
+footer .services {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+footer .services .service form {
+    display: flex;
+    background-color: rgba(0,0,0, 0.05);
+    padding: 25px;
+    border-radius: 6px;
+    flex-direction: column;
+    width: 350px;
+}
+footer .services .service form label {
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+footer .services .service form  input {
+    margin-bottom: 10px;
+    padding: 5px;
+    border: 1px solid transparent;
+    box-shadow: 0 0 10px rgba(0,0,0, 0.05);
+    outline: 0;
+}
+footer .services .service form  input:focus {
+    outline: 1px solid #27ae60;
+}
+footer .services .service form input[type = "submit"] {
+    margin-top: 15px;
+    color: #fff ;
+    background-color: #27ae60;
+    border: 1px solid #27ae60;
+}
+footer .services .service #reponse {
+    color: #000;
+    font-size: 14px;
+}
+hr {
+    background-color: #ccc;
+    border: 0;
+    height: 2px;
+    width: 100%;
+}
+.footer-text {
+    text-align: center;
+    font-size: 15px;
+    padding: 8px 0;
+}
+.footer-text span {
+    color: #27ae60;
+}
+.toggle_menu {
+    display: none;
+}
+/*Responsive */
+@media (max-width:964px) {
+    header .menu {
+        display: none;
+    }
+    header {
+        padding: 0 20px;
+    }
+    #home {
+        flex-direction: column;
+        padding: 12px;
+        height: fit-content;
+    }
+    #home .left , #home .right {
+        width: 100%;
+        padding: 0;
+    }
+    #home .left {
+        margin:  100px 0;
+    }
+    #home .left h1 {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    #home .left h4 {
+        font-size: 14px;
+    }
+    #home .left p {
+        font-size: 14px;
+    }
+    #menu .tiramisus .tiramisu {
+        width: 100%;
+        max-width: 260px;
+    }
+    #about_us {
+        padding: 10px;
+        height: auto;
+    }
+    #about_us .about {
+        flex-direction: column;
+        height: fit-content;
+    }
+    #about_us .left ,  #about_us .right {
+        width: 100%;
+    }
+    #about_us .left {
+        height: fit-content;
+    }
+    #about_us .left img {
+        width: 50%;
+    }
+    #about_us .right {
+        text-align: center;
+        padding: 20px;
+    }
+    #comments_section  {
+        height: auto;
+    }
+    #comments_section .comments .comment {
+       width: 100%;
+       margin-top: 20px;
+    }
+    .services .service {
+        padding: 0 50px;
+    }
+    .toggle_menu {
+        display: flex;
+        height: 40px;
+        width: 40px;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         position: relative;
+         cursor: pointer;
+    }
+    .toggle_menu::before {
+        position: absolute;
+        content: "";
+        height: 3px;
+        width: 28px;
+        background-color: #27ae60;
+        border-radius: 6px;
+        box-shadow: 0 10px 0 #27ae60;
+        transform: translateY(-10px);
+        transition: 0.5s;
+    }
+    .toggle_menu.active::before {
+        transform: translateY(0) rotate(135deg);
+        box-shadow: 0 0 0 #27ae60;
+    }
+    .toggle_menu::after {
+        position: absolute;
+        content: "";
+        height: 3px;
+        width: 28px;
+        background-color: #27ae60;
+        border-radius: 6px;
+       
+        transform: translateY(10px);
+        transition: 0.5s;
+    }
+    .toggle_menu.active::after {
+        transform: translateY(0) rotate(-135deg);
+        
+    }
+    header .menu.responsive {
+        display: flex;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0,0, 0.1);
+        flex-direction: column;
+    }
+    header .menu.responsive li {
+        margin : 15px 0;
+    }
+    
+}
+#product_table {
+    margin-top: 50px;
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#product_table table {
+    width: 80%;
+    border-collapse: collapse;
+    text-align: left;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+#product_table table th,
+#product_table table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+}
+
+#product_table table th {
+    background-color: #27ae60;
+    color: white;
+    font-size: 16px;
+}
+
+#product_table table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+#product_table table tr:hover {
+    background-color: #f1f1f1;
+}
+
+.title {
+    text-align: center;
+    font-size: 24px;
+    color: #273e60;
+    margin-bottom: 20px;
+}
+#panier {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+#panier .title {
+    font-size: 2rem;
+    color: #333;
+}
+#cartTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+#cartTable th, #cartTable td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+#cartTable th {
+    background-color: #f4f4f4;
+}
+
+#total {
+    text-align: right;
+    margin-top: 20px;
+}
+
+#confirmOrder {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#confirmOrder:hover {
+    background-color: #007bff;
+}
+/* Styles pour le panier */
+
+#panier {
+    padding: 50px;
+    background-color: #f9f9f9;
+}
+
+
+/* Section carrousel */
+#carousel {
+    background-color: #f9f9f9;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#carousel .title-menu {
+    font-size: 20px;
+    color: #27ae60;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+#carousel .title {
+    font-size: 36px;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+/* Section carrousel */
+#carousel {
+    background-color: #f9f9f9;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#carousel .title-menu {
+    font-size: 20px;
+    color: #27ae60;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+#carousel .title {
+    font-size: 36px;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+/* Images du carrousel */
+.carousel-item img {
+    height:600px; /* Taille fixe */
+    width: 100px;
+    object-fit: cover; /* Maintenir les proportions */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    
+}
+
+/* Navigation */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+    background-color: #27ae60;
+}
+
+/* Indicateurs */
+.carousel-indicators button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #27ae60;
+    border: none;
+}
+
+.carousel-indicators .active {
+    background-color: #27ae60;
+    box-shadow: 0 0 5px #27ae60;
+}
+
+
